@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaghcheBookInfo.Application.Common;
 
 namespace TaghcheBookInfo.Application.Services
 {
@@ -27,7 +28,7 @@ namespace TaghcheBookInfo.Application.Services
             var cacheExpiryOptions = new MemoryCacheEntryOptions
             {
                 Priority = CacheItemPriority.High,
-                SlidingExpiration = TimeSpan.FromSeconds(30),
+                SlidingExpiration = TimeSpan.FromSeconds(Constants.MemoryTimeSeconds),
             };
             _memoryCache.Set(id.ToString(), book, cacheExpiryOptions);
         }

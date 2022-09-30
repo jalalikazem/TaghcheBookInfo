@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using TaghcheBookInfo.Application.Common;
 
 namespace TaghcheBookInfo.Application.Services
 {
@@ -33,7 +34,7 @@ namespace TaghcheBookInfo.Application.Services
         public async Task SetBook(int id, object book)
         {
             var options = new DistributedCacheEntryOptions()
-                .SetAbsoluteExpiration(DateTime.Now.AddMinutes(2)).SetSlidingExpiration(TimeSpan.FromMinutes(1));
+                .SetAbsoluteExpiration(DateTime.Now.AddMinutes(Constants.RedisTimeMinutes)).SetSlidingExpiration(TimeSpan.FromMinutes(1));
             var jsonBook = JsonSerializer.Serialize(book);
             await _distributedCache.SetAsync(id.ToString(), Encoding.ASCII.GetBytes(jsonBook), options);
 

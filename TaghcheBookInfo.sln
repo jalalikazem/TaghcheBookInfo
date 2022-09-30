@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaghcheBookInfo", "TaghcheB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaghcheBookInfo.Application", "TaghcheBookInfo.Application\TaghcheBookInfo.Application.csproj", "{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaghcheBookInfo.Test", "TaghcheBookInfo.Test\TaghcheBookInfo.Test.csproj", "{6DA7AC6F-9C1E-44E1-A438-13A505F2F89F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA7AC6F-9C1E-44E1-A438-13A505F2F89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA7AC6F-9C1E-44E1-A438-13A505F2F89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA7AC6F-9C1E-44E1-A438-13A505F2F89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA7AC6F-9C1E-44E1-A438-13A505F2F89F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,13 +8,13 @@ using TaghcheBookInfo.Application.Services;
 
 namespace TaghcheBookInfo.Application
 {
-    public class GetBookHandler
+    public class BookHandler
     {
         private readonly MemoryService _memoryService;
         private readonly RedisService _redisService;
         private readonly TaghcheApiService _taghcheApiService;
 
-        public GetBookHandler(MemoryService memoryService, RedisService redisService, TaghcheApiService taghcheApiService)
+        public BookHandler(MemoryService memoryService, RedisService redisService, TaghcheApiService taghcheApiService)
         {
             _memoryService = memoryService;
             _redisService = redisService;
@@ -29,11 +29,8 @@ namespace TaghcheBookInfo.Application
 
             book = await _redisService.GetBook(id);
             if (book is not null)
-            {
-                _memoryService.SetBook(id, book);
                 return GeneralResponse.Success(book, "From Redis");
-            }
-
+            
             book = await _taghcheApiService.GetBook(id);
             if (book is null)
                 return GeneralResponse.Failed("Not Found!");

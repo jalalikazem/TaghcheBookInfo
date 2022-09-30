@@ -3,10 +3,8 @@ using TaghcheBookInfo.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMemoryCache();
@@ -15,7 +13,7 @@ builder.Services.AddStackExchangeRedisCache(o => o.Configuration = builder.Confi
 builder.Services.AddScoped<MemoryService>();
 builder.Services.AddScoped<RedisService>();
 builder.Services.AddScoped<TaghcheApiService>();
-builder.Services.AddScoped<GetBookHandler>();
+builder.Services.AddScoped<BookHandler>();
 
 var app = builder.Build();
 

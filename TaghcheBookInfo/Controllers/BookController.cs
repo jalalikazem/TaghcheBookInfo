@@ -8,8 +8,8 @@ namespace TaghcheBookInfo.Controllers
     [ApiController]
     public class BookController : ControllerBase
     {
-        private readonly GetBookHandler _getBookHandler;
-        public BookController(GetBookHandler getBookHandler)
+        private readonly BookHandler _getBookHandler;
+        public BookController(BookHandler getBookHandler)
         {
             _getBookHandler = getBookHandler;
         }
