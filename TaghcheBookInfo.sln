@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaghcheBookInfo", "TaghcheBookInfo\TaghcheBookInfo.csproj", "{955D7EEA-18EF-4FA7-BB1B-7C71ADEA74D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaghcheBookInfo.Application", "TaghcheBookInfo.Application\TaghcheBookInfo.Application.csproj", "{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{955D7EEA-18EF-4FA7-BB1B-7C71ADEA74D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955D7EEA-18EF-4FA7-BB1B-7C71ADEA74D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955D7EEA-18EF-4FA7-BB1B-7C71ADEA74D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955D7EEA-18EF-4FA7-BB1B-7C71ADEA74D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E145DFEE-5B89-4AB4-903E-0E15F1CBB9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6D9246E-5589-425B-A365-DD01A9A4D085}
+	EndGlobalSection
+EndGlobal
